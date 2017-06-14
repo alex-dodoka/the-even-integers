@@ -1,14 +1,14 @@
+'use strict';
 const evenNumbersArr = [];
 const oddNumberArr = [];
 const randomNumber = Math.floor(Math.random() * 100);
 
-console.log(`Случайное число равняется : ${randomNumber}.`);
-
 for (let i = 0; i < randomNumber; i++) {
-    if (i % 2) {
-        oddNumberArr.push(i);
-    } else {
+    if (i % 2 === 0) {
         evenNumbersArr.push(i)
+    } else {
+        oddNumberArr.push(i);
+
     }
 
 }
